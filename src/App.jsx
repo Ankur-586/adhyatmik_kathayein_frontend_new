@@ -1,22 +1,14 @@
-import { useState } from 'react'
+import { RouterProvider } from "react-router-dom";
 
-import './App.css'
+// import './App.css'
 
 import Container from "./components/ui/Container";
+import router from "./router/AppRouter";
+// import Navbar from "./components/layouts/Navbar";
 
-import Navbar from "./components/layouts/Navbar";
 
 function App() {
-    return (
-      <>
-      <Navbar />
-        <Container>
-            <div className="mt-10 h-96 bg-red-500 rounded-xl">
-                TEST
-            </div>
-        </Container>
-      </>
-    );
+    return <RouterProvider router={router} />;
 }
 
 export default App;
