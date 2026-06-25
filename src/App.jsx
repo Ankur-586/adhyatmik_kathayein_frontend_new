@@ -1,0 +1,41 @@
+import { useState } from 'react'
+
+import './App.css'
+
+import Container from "./components/ui/Container";
+
+import Navbar from "./components/layouts/Navbar";
+
+function App() {
+    return (
+      <>
+      <Navbar />
+        <Container>
+            <div className="mt-10 h-96 bg-red-500 rounded-xl">
+                TEST
+            </div>
+        </Container>
+      </>
+    );
+}
+
+export default App;
+
+// import Navbar from "./components/layouts/Navbar";
+// import Footer from "./components/layouts/Footer";
+
+// function App() {
+//     return (
+//       <>
+//         <Navbar />
+//           <Container>
+//               <div className="mt-10 h-96 rounded-xl bg-red-500 flex items-center justify-center text-white text-3xl">
+//                   TEST
+//               </div>
+//           </Container>
+//         <Footer />
+//       </>
+//     );
+// }
+
+// export default App;
