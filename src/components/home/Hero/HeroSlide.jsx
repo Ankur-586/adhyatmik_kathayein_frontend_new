@@ -4,8 +4,21 @@ import HeroContent from "./HeroContent";
 import HeroMedia from "./HeroMedia";
 
 const HeroSlide = ({ slide }) => {
+    
     return (
-        <div className="relative h-[65vh] min-h-[500px] overflow-hidden rounded-[36px] lg:h-[72vh] xl:h-[75vh]">
+
+        /* ====================================================
+            Hero Container
+
+            relative        → Positioning context for overlay and image.
+            h-[58vh]        → Hero occupies 58% of the viewport height.
+            min-h-[480px]   → Prevents the Hero from becoming too short.
+            max-h-[540px]   → Prevents the Hero from becoming too tall.
+            overflow-hidden → Clips the image inside rounded corners.
+            rounded-[36px]  → Premium rounded appearance.
+            ==================================================== */
+
+        <div className="relative h-[58vh] min-h-[480px] max-h-[540px] overflow-hidden rounded-[36px]">
 
             {/* Background Image */}
             <HeroMedia

@@ -6,7 +6,7 @@ import HeroCarousel from "./HeroCarousel";
 const Hero = () => {
     return (
         <section className="py-8 lg:py-10">
-            <Container>
+            <Container size="wide">
                 <HeroCarousel />
             </Container>
         </section>
