@@ -1,13 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
-
-const TestPage = () => {
-    return (
-        <div className="h-96 bg-red-500 rounded-xl flex items-center justify-center text-white text-4xl">
-            TEST PAGE
-        </div>
-    );
-};
+import Home from "../pages/Home/Home";
 
 const router = createBrowserRouter([
     {
@@ -16,7 +9,7 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <TestPage />,
+                element: <Home/>,
             },
         ],
     },

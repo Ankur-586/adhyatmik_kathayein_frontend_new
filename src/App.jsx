@@ -1,7 +1,5 @@
 import { RouterProvider } from "react-router-dom";
 
-// import './App.css'
-
 import Container from "./components/ui/Container";
 import router from "./router/AppRouter";
 // import Navbar from "./components/layouts/Navbar";
