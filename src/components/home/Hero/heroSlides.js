@@ -13,7 +13,6 @@ const heroSlides = [
             "Explore timeless stories of Lord Krishna from the Mahabharata, Bhagavad Gita and Srimad Bhagavatam.",
 
         image: krishna,
-
         primaryButton: {
             text: "Read Stories",
             url: "/stories",

@@ -1,0 +1,14 @@
+import Container from "../../ui/Container";
+import HeroCarousel from "./HeroCarousel";
+
+const HeroDesktop = () => {
+    return (
+        <section className="py-8 lg:py-10">
+            <Container size="wide">
+                <HeroCarousel />
+            </Container>
+        </section>
+    );
+};
+
+export default HeroDesktop;

@@ -11,14 +11,17 @@ const HeroSlide = ({ slide }) => {
             Hero Container
 
             relative        → Positioning context for overlay and image.
-            h-[58vh]        → Hero occupies 58% of the viewport height.
-            min-h-[480px]   → Prevents the Hero from becoming too short.
-            max-h-[540px]   → Prevents the Hero from becoming too tall.
+            aspect-[2.8/1]   → Keeps a cinematic 16:9 ratio on all screen sizes.
             overflow-hidden → Clips the image inside rounded corners.
             rounded-[36px]  → Premium rounded appearance.
-            ==================================================== */
 
-        <div className="relative h-[58vh] min-h-[480px] max-h-[540px] overflow-hidden rounded-[36px]">
+            Why 16:9?
+            - Matches most cinematic content.
+            - Crops far less than the previous ultra-wide Hero.
+            - Looks better with AI-generated artwork.
+        ==================================================== */
+
+        <div className="relative aspect-[2.8/1] overflow-hidden rounded-[36px]">
 
             {/* Background Image */}
             <HeroMedia
@@ -43,7 +46,9 @@ const HeroSlide = ({ slide }) => {
 
                 <div className="w-full px-8 md:px-12 lg:px-16">
 
-                    <HeroContent slide={slide} />
+                    <div className="max-w-[600px]">
+                        <HeroContent slide={slide} />
+                    </div>
 
                 </div>
 
@@ -54,3 +59,16 @@ const HeroSlide = ({ slide }) => {
 };
 
 export default HeroSlide;
+
+/* ====================================================
+Hero Container
+
+relative        → Positioning context for overlay and image.
+h-[58vh]        → Hero occupies 58% of the viewport height.
+min-h-[480px]   → Prevents the Hero from becoming too short.
+max-h-[540px]   → Prevents the Hero from becoming too tall.
+overflow-hidden → Clips the image inside rounded corners.
+rounded-[36px]  → Premium rounded appearance.
+==================================================== */
+
+/*<div className="relative h-[58vh] min-h-[480px] max-h-[540px] overflow-hidden rounded-[36px]"></div> */

@@ -14,6 +14,9 @@ const HeroMedia = ({ image, title }) => {
                 object-center
                 select-none
             "
+            // style={{
+            //     objectPosition: "center top"
+            // }}
             draggable="false"
         />
     );
