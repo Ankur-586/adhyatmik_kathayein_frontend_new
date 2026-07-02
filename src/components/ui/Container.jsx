@@ -3,7 +3,7 @@
 const containerSizes = {
     narrow: "max-w-5xl",      // Articles
     default: "max-w-7xl",     // Most sections
-    wide: "max-w-[1600px]",   // Hero
+    wide: "max-w-[1400px]",   // Hero
     full: "max-w-full",       // Full-width layouts
 };
 
